@@ -1,5 +1,5 @@
 # INSTAGRAM CHATBOT
-### [FOLLOW THIS VIDEO TO KNOW HOW IT WORKS :)](https://youtu.be/5DZVcMSotIc/)
+### [FOLLOW THIS VIDEO TO KNOW HOW IT WORKS :)](https://youtu.be/_k8Mbb98Eg8)
 
 # Built With
 <h5>Insta.js</h5>
@@ -40,3 +40,8 @@ password=your_password"
 ###### Discord: `@Tøfu#5735`. 
 ###### Telegram: `@Awesome_tofu`.
 ###### Instagram: `@aditya.agatsuma`.
+
+
+
+## REPO BASE
+[Insta-chatbot](https://github.com/venom-exe/insta-chatbot)
