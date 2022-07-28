@@ -5,6 +5,15 @@
 <h5>Insta.js</h5>
 <h5>node-fetch</h5>
 
+
+## DEPLOY
+<p align="center">
+        <a href="https://heroku.com/deploy?template=https://github.com/Awesome-Tofu/instagram-chatbot">
+            <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+        </a>
+    </p>
+
+    
 # SETUP
 
 [CLICK ME TO WATCH THE VIDEO ON HOW TO SETUP](https://youtube.com/c/VenomExE)
@@ -26,12 +35,6 @@ username=your_username
 password=your_password"
 ```
 
-## DEPLOY
-<p align="center">
-        <a href="https://heroku.com/deploy?template=https://github.com/Awesome-Tofu/instagram-chatbot">
-            <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-        </a>
-    </p>
 
 ## CONTACT HERE
 ###### Discord: `@Tøfu#5735`. 
