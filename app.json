@@ -12,6 +12,7 @@
   },
     "USERNAME": {
     "description": "Put username or email adress of instagram bot",
+      "value": "",
      "required" :true
   },
   "PASSWORD": {
