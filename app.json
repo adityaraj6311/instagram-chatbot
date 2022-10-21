@@ -7,16 +7,17 @@
   "env": {
   "OWNER_NAME": {
   "description": "Name of Bot Owner",
-      "value": "Your Name."
+      "value": ""
+    "required" :true
   },
     "USERNAME": {
     "description": "Put username or email adress of instagram bot",
-     "required" :false
+     "required" :true
   },
   "PASSWORD": {
     "description": "Put packname;authorname.",
-     "value": "SamPandey001;Secktor",
-     "required": false
+     "value": "",
+     "required" :true
   }
 },
   "buildpacks": [
