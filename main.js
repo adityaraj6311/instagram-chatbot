@@ -18,7 +18,7 @@ client.on('messageCreate', (message) => {
         return message.chat.sendMessage(`OwO, how do you know my master ${god}?`);
           } 
   else
-    chatbot(`<Enter Brainshop API>${encodeURIComponent(message.content)}`) //Replace <Enter Brainshop API> to API
+    chatbot(`http://api.brainshop.ai/get?bid=169976&key=vroVmiAsTNWUy5rZ&uid=[uid]&msg=${encodeURIComponent(message.content)}`) //Replace <Enter Brainshop API> to API
     .then(res => res.json())
     .then(json => {
       message.chat.sendMessage(json.cnt);
