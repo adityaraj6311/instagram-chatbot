@@ -11,12 +11,12 @@
     "required" :true
   },
     "USERNAME": {
-    "description": "Put username or email adress of instagram bot",
+    "description": "Put Username or Email Address of Instagram bot",
       "value": "",
      "required" :true
   },
   "PASSWORD": {
-    "description": "Put packname;authorname.",
+    "description": "Put Password Of Bot Account",
      "value": "",
      "required" :true
   }
