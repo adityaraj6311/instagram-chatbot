@@ -17,7 +17,8 @@ client.on('messageCreate', (message) => {
     .then(res => res.json())
     .then(json => {
       message.chat.sendPhoto(json.url);
-    }).catch(err => {})};
+    }).catch(err => {});
+}
     else
         console.log(message.content)
     });
