@@ -18,7 +18,7 @@ client.on('messageCreate', (message) => {
     .then(json => {
       message.chat.sendPhoto(json.url);
     }).catch(err => {});
-});
+    }});
 
 client.on('messageCreate', (message) => {
     if (message.author.id === client.user.id) return
