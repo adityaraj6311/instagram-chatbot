@@ -11,8 +11,7 @@ client.on('messageCreate', (message) => {
     if (message.author.id === client.user.id) return
     message.markSeen();
 
-    if(message.content.toLowerCase().includes('/meme')){ 
-        return
+    if(message.content.toLowerCase().includes('/meme')){
     chatbot(`https://meme-api.herokuapp.com/gimme/wholesomememes`)
     .then(res => res.json())
     .then(json => {
