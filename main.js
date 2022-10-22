@@ -8,6 +8,10 @@ client.on('connected', () => {
 });
 
 client.on('messageCreate', (message) => {
+    console.log(messageID);
+});
+
+client.on('messageCreate', (message) => {
     if (message.author.id === client.user.id) return
     message.markSeen();
 
