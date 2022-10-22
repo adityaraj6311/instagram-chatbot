@@ -15,11 +15,25 @@ client.on('messageCreate', (message) => {
         return message.chat.sendMessage(`Calling my owner for u ... ${god} #Kidding`);
     }
     else if(message.content.toLowerCase().includes('/nsfw')){ 
-        return message.chat.sendMessage(`\NSFW cmds: /n /hentai`);
+        return message.chat.sendMessage(`NSFW cmds: /hentai, /hneko`);
           } 
     else if(message.content.toLowerCase().includes('tofu')){ 
         return message.chat.sendMessage(`OwO, how do you know my master ${god}?`);
           } 
+    else if(message.content.toLowerCase().includes('/hentai')){
+    chatbot(`https://api.waifu.pics/nsfw/waifu`)
+    .then(res => res.json())
+    .then(json => {
+      message.chat.sendPhoto(json.url);
+    }).catch(err => {});
+}
+    else if(message.content.toLowerCase().includes('/hneko')){
+    chatbot(`https://api.waifu.pics/nsfw/neko`)
+    .then(res => res.json())
+    .then(json => {
+      message.chat.sendPhoto(json.url);
+    }).catch(err => {});
+}
     else if(message.content.toLowerCase().includes('/meme')){
     chatbot(`https://api.popcat.xyz/meme`)
     .then(res => res.json())
