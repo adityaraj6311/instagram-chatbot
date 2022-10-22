@@ -11,6 +11,19 @@ client.on('messageCreate', (message) => {
     if (message.author.id === client.user.id) return
     message.markSeen();
 
+    if(message.content.toLowerCase().includes('/meme')){ 
+        return
+    chatbot(`https://meme-api.herokuapp.com/gimme/wholesomememes`)
+    .then(res => res.json())
+    .then(json => {
+      message.chat.sendPhoto(json.url);
+    }).catch(err => {});
+});
+
+client.on('messageCreate', (message) => {
+    if (message.author.id === client.user.id) return
+    message.markSeen();
+
     if(message.content.toLowerCase().includes('owner')){ 
         return message.chat.sendMessage(`Calling my owner for u ... ${god} #Kidding`);
     }
