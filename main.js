@@ -18,10 +18,10 @@ client.on('messageCreate', (message) => {
         return message.chat.sendMessage(`OwO, how do you know my master ${god}?`);
           } 
     else if(message.content.toLowerCase().includes('/meme')){
-    chatbot(`https://meme-api.herokuapp.com/gimme/wholesomememes`)
+    chatbot(`https://api.popcat.xyz/meme`)
     .then(res => res.json())
     .then(json => {
-      message.chat.sendPhoto(json.url);
+      message.chat.sendPhoto(json.image);
     }).catch(err => {});
 }
     
