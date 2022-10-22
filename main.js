@@ -6,12 +6,12 @@ const god = process.env.OWNER_NAME; //Your Instagram ID
 client.on('connected', () => {
     console.log(`${client.user.username} Is Ready Now For Chats`);
 });
-client.on('messageCreate', (message) => {
-      if(message.content.toLowerCase().includes('/approve')){ 
-        message.chat.approveFollow();
-    }
-    else console.log(message.chat.users)
-});
+//client.on('messageCreate', (message) => {
+    //  if(message.content.toLowerCase().includes('/approve')){ 
+       // message.chat.approveFollow();
+  //  }
+    //else console.log(message.chat.users)
+//});
 
 client.on('messageCreate', (message) => {
     if (message.author.id === client.user.id) return
