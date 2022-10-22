@@ -23,7 +23,6 @@ client.on('messageCreate', (message) => {
     else if(message.content.toLowerCase().includes('tofu')){ 
         return message.chat.sendMessage(`OwO, how do you know my master ${god}?`);
           } 
-    }
     else if(message.content.toLowerCase().includes('/hentai')){
     chatbot(`https://api.waifu.pics/nsfw/waifu`)
     .then(res => res.json())
