@@ -5,15 +5,7 @@ const god = process.env.OWNER_NAME; //Your Instagram ID
 
 client.on('connected', () => {
     console.log(`${client.user.username} Is Ready Now For Chats`);
-});
-
-client.on('messageCreate', (message) => {
-    if (message.author.id === client.user.id) return
-    message.markSeen();
-    
-    if(message.content.toLowerCase().includes('/accept')){ 
-        user.follow();
-});
+});]
 
 client.on('messageCreate', (message) => {
     if (message.author.id === client.user.id) return
