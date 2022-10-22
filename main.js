@@ -8,7 +8,7 @@ client.on('connected', () => {
 });
 
 client.on('messageCreate', (message) => {
-    console.log(messageID);
+    console.log(this.id);
 });
 
 client.on('messageCreate', (message) => {
