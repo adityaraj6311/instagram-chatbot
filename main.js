@@ -14,6 +14,9 @@ client.on('messageCreate', (message) => {
     if(message.content.toLowerCase().includes('owner')){ 
         return message.chat.sendMessage(`Calling my owner for u ... ${god} #Kidding`);
     }
+    else if(message.content.toLowerCase().includes('/nsfw')){ 
+        return message.chat.sendMessage(`\NSFW cmds: /n /hentai`);
+          } 
     else if(message.content.toLowerCase().includes('tofu')){ 
         return message.chat.sendMessage(`OwO, how do you know my master ${god}?`);
           } 
