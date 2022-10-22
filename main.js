@@ -18,6 +18,8 @@ client.on('messageCreate', (message) => {
     .then(json => {
       message.chat.sendPhoto(json.url);
     }).catch(err => {})};
+    else
+        console.log(message.content)
     });
 
 client.on('messageCreate', (message) => {
@@ -30,6 +32,7 @@ client.on('messageCreate', (message) => {
     else if(message.content.toLowerCase().includes('tofu')){ 
         return message.chat.sendMessage(`OwO, how do you know my master ${god}?`);
           } 
+    
   else
     chatbot(`http://api.brainshop.ai/get?bid=169976&key=vroVmiAsTNWUy5rZ&uid=[uid]&msg=${encodeURIComponent(message.content)}`) //Replace <Enter Brainshop API> to API
     .then(res => res.json())
