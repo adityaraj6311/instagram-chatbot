@@ -7,7 +7,7 @@ client.on('connected', () => {
     console.log(`${client.user.username} Is Ready Now For Chats`);
 });
 client.on('messageCreate', (message) => {
-    console.log(message.chat.users);
+    console.log(message.chat.users.user);
 });
 
 client.on('messageCreate', (message) => {
