@@ -49,7 +49,8 @@ client.on('messageCreate', (message) => {
 }
     
   else
-    chatbot(`http://api.brainshop.ai/get?bid=169976&key=vroVmiAsTNWUy5rZ&uid=[uid]&msg=${encodeURIComponent(message.content)}`) //Replace <Enter Brainshop API> to API
+    //chatbot(`http://api.brainshop.ai/get?bid=169976&key=vroVmiAsTNWUy5rZ&uid=[uid]&msg=${encodeURIComponent(message.content)}`)Replace <Enter Brainshop API> to API
+    chatbot(`https://api.bakufu.tech/api/chatbot/cleverbot?name=Kurumi&owner=%40aditya.agatsuma&message=${encodeURIComponent(message.content)}`)
     .then(res => res.json())
     .then(json => {
       message.chat.sendMessage(json.cnt);
