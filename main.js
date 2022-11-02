@@ -53,7 +53,7 @@ client.on('messageCreate', (message) => {
     //chatbot(`https://api.bakufu.tech/api/chatbot/cleverbot?name=Kurumi&owner=%40aditya.agatsuma&message=${encodeURIComponent(message.content)}`)
     .then(res => res.json())
     .then(json => {
-      message.chat.sendMessage(json.reply);
+      message.chat.sendMessage(json.cnt);
     }).catch(err => {});
 });
     
