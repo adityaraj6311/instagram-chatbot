@@ -1,7 +1,7 @@
 const Insta = require('./insta.js');
 const client = new Insta.Client();
 const chatbot = require("node-fetch").default;
-const god = process.env.OWNER_NAME; //Your Instagram ID
+const god = "aditya.agatsuma"; //Your Instagram ID
 
 client.on('connected', () => {
     console.log(`${client.user.username} Is Ready Now For Chats`);
@@ -58,5 +58,5 @@ client.on('messageCreate', (message) => {
 });
     
     
-client.login(process.env.USERNAME, process.env.PASSWORD);  //Robot's Account Username and Password
+client.login('kurumi_chatbot', '1000tofu');  //Robot's Account Username and Password
 
