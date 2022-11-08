@@ -1,7 +1,7 @@
 const Insta = require('./insta.js');
 const client = new Insta.Client();
 const chatbot = require("node-fetch").default;
-const god = "aditya.agatsuma"; //Your Instagram ID
+const god = "@aditya.agatsuma"; //Your Instagram ID
 
 client.on('connected', () => {
     console.log(`${client.user.username} Is Ready Now For Chats`);
